@@ -1,0 +1,166 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/* Variables */
+:root {
+	--normal-font: 10px;
+	--robot: 'Roboto' sans-serif;
+	--hover: #EFF0F0;
+}
+
+/* Global Styles */
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: var(--normal-font);
+}
+
+body {
+	font-family: var(--roboto);
+	font-weight: 100;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+/* Main Styles */
+.nav-bar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0.5rem 1rem;
+}
+
+.nav-links {
+	display: flex;
+	align-self: center;
+	margin-right: 1.5rem;
+}
+
+.nav-links a {
+	padding-right: 1rem;
+	color: black;
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+}
+
+.apps {
+	cursor: pointer;
+	padding: 1rem;
+	width: 44px;
+	height: 44px;
+}
+
+.apps:hover {
+	background-color: var(--hover);
+	border-radius: 50%;
+}
+
+.profile {
+	margin-left: 1rem;
+}
+
+.profile img {
+	border-radius: 50%;
+	border: 5px solid transparent;
+	cursor: pointer;
+}
+
+.profile img:hover {
+	border: 5px solid var(--hover);
+}
+
+.search-container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem; 
+}
+
+.search-bar-container {
+	margin-top: 3rem;
+	position: relative;
+}
+
+.search-bar-container input {
+	width: 550px;
+	padding: 1.5rem 3rem 1.5rem 5rem;
+	color: #515151;
+	font-size: 1.5rem;
+	border-radius: 30px;
+	outline: none;
+	border: 1.5px solid #dddddd;
+}
+
+.search-icon {
+	font-size: 1.5rem;
+	color: #ccc;
+	position: absolute;
+	left: 2rem;
+	top: 35%;
+}
+
+.search-bar-container input:hover, .search-bar-container input:focus {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+}
+
+.search-btns {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.search-btns button {
+	background-color: #F8F9FA;
+	font-weight: 300;
+	color: #515151;
+	padding: 1rem;
+	border: none;
+	margin: 0 1rem;
+	cursor: pointer;
+	outline: none;
+}
+
+footer {
+	border-top: 1px solid #ccc;
+	position: absolute;
+	bottom: 0;
+	background-color: #F2F2F2;
+	width: 100%;
+	padding: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer a {
+	margin: 0 1.5rem;
+	color: #515151;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 640px) {
+	.search-bar-container input {
+		width: 440px;
+	}
+}
